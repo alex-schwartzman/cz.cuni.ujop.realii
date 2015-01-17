@@ -1,0 +1,196 @@
+
+body#cyc.vn{font-family: sans-serif;}
+/*
+body,html{padding:0;margin:0;}
+body{
+background: #fff;
+font-family: 'PT Sans', sans-serif;
+font-size:14px;
+line-height:140%;
+}
+
+h1,h2,h3{color:#0c69af;}
+h1{font-size:2.45em;color:#3a3a3a;font-weight:normal;letter-spacing: 2px;line-height: 1em;}
+h2{font-size:1.5em;}
+h3{font-size:1.2em;}
+a{color:#0e9ff2;text-decoration:none;}
+a:hover{color:#EB3436;text-decoration:underline;}
+
+     #head-wrap,#topmenu-wrap,#zalozky-wrap,#content-wrap,#footer-wrap,#homepage-wrap,#homepage-text-wrap,#navbar-wrap{min-height:50px;width:100%;border:0px solid black;min-width:1012px;}
+     #head,#topmenu,#zalozky,#content,#homepage-nav,#homepage-text,#navbar{width:1012px;margin-left:auto;margin-right:auto;}
+    #head-wrap,#head{height:97px;position:relative;}
+#head-wrap{min-width: 1100px;}
+
+     #main-nav-corner{position:absolute;background:url('/images/layout/main-nav-corner.png') no-repeat;display:block;width:81px;height:81px;top:0;right:0;z-index: 100;}
+     #logo{display:block;background:url('/images/layout/logo-obcanstvi.png');width:214px;height:50px;margin-top:22px;float:left;position:absolute;}
+     
+     #topmenu-wrap{background-color:#edf5f7;border-top:1px solid #e9edee;height:50px;}
+     #topmenu{position:relative;}
+     #hmenuwrap {position:absolute;top:5px;left:5px;}
+     #hmenuwrap a{float:left;margin:10px;color:#0e9ff2;font-size:1.2em;text-decoration:none;}
+     #hmenuwrap a:hover{text-decoration:underline;color:#ED3236;}
+     #topmenu #search{position:absolute;top:8px;;right:5px;color:#fff;background:url('/images/layout/search.png') no-repeat;width:210px;height:34px;}
+
+     #topmenu #search input[type="text"]{border-width:0;margin-top:8px;width:160px;background-color:transparent;}
+     #topmenu #search input[type="submit"]{position:absolute;top:8px;right:8px;background:url('/images/layout/search-icon.png') no-repeat;width:18px;height:18px;color:transparent;border-width:0;cursor:pointer;}
+     #topmenu #search label{display:none;}
+     #zalozky-wrap{height:93px;background:url('/images/layout/poz-small.jpg') repeat-x;}
+     #zalozky a{display:block;height:73px;position:relative;float:left;margin-top:20px;}
+     #zalozky a span{display:block;float:left;}
+     #zalozky a span.left{width:12px;height:73px;background:none;}
+     #zalozky a span.right{width:12px;height:73px;background:none;}
+     #zalozky a span.center{background-color:transparent;height:73px;line-height: 73px;font-size:1.6em;color:#ffffff;max-width:510px;}
+     #zalozky a.selected span.left{background:url('/images/layout/zalozka-tl.png') no-repeat;}
+     #zalozky a.selected span.right{background:url('/images/layout/zalozka-tr.png') no-repeat;}
+     #zalozky a.selected span.center{background-color:#fff;color:#ED3236;}
+     #zalozky a:hover span.center{color:#ED3236;}
+     
+     #zalozky a span.center .info{display:block;width:25px;height:25px;margin:25px 5px;background:url('/images/layout/informace-s.png') no-repeat;}
+     #zalozky a.selected span.center .info{background:url('/images/layout/informace-s-h.png') no-repeat;}
+     #zalozky a span.center .realie{display:block;width:45px;height:25px;margin:25px 5px;background:url('/images/layout/realie-s.png') no-repeat;}
+     #zalozky a.selected span.center .realie{background:url('/images/layout/realie-s-h.png') no-repeat;}
+     #zalozky a span.center .zkouskacj{display:block;width:31px;height:25px;margin:25px 5px;background:url('/images/layout/zkouska-cj-s.png') no-repeat;}
+     #zalozky a.selected span.center .zkouskacj{background:url('/images/layout/zkouska-cj-s-h.png') no-repeat;}
+    
+#user-login{position: absolute;right:5px;top:32px;}
+#user-avatar{background:url('/images/layout/user.png') no-repeat;display:block;width:16px;height:16px;float:left;margin-right:5px;margin-top:8px;}
+#loggeduser{color:#00a4f9;text-align:center;float:left;text-transform: capitalize;margin-top:8px;}
+#userarrow{background:url('/images/layout/lang-arrow.png') no-repeat;display:block;width:5px;height:3px;float:left;margin: 16px 0 0 10px;}
+ 
+     #menu {width:230px;float:left;min-height: 20px;}
+     #menu ul{list-style-type:none;padding:0;margin-top:55px;}
+     #menu ul ul{margin:5px 0 0 0px;padding-left:10px;}
+     #menu ul li {}
+     #menu ul li ,#menu ul li a{color:#0e9ff2;text-decoration:none;font-weight: 500;}
+     #menu ul li{border-top:1px solid #e9edee;padding:5px 8px;}
+
+    #menu ul li a:hover{color:#f03337;}  
+#menu .currentpage{background-color:#f6fafb;color:#f03337;}
+#menu .sectionheader{background:url('/images/layout/menu-arrow-open.png') right 15px no-repeat;cursor:pointer;}
+#menu .sectionheader span{display: block; height: 100%; width: 100%;}
+#menu .sectionheader ul{display:none;}
+#menu .sectionheader.activeparent ul{display:block;}
+#menu .activeparent{background:url('/images/layout/menu-arrow-close.png') right 15px no-repeat;}
+#menu .activeparent ul{display:block;}
+     #main{float:left;width:750px;margin-top:40px;margin-left:30px;}
+     
+     #breadcrumbs,#breadcrumbs a,#breadcrumbs span{color:#8e8e8e;text-decoration:none;font-size: 0.85em;font-variant:}
+     #breadcrumbs .lastitem{color:#f03337;}
+     
+     #footer1,#footer2{border-top:1px solid #e9edee;background-color:#f2f7fa;width:100%;float:left;}
+     #footer1{margin-top:40px;height:150px;}
+     #footer2{background-color:#edf5f7;height:180px;}
+     #footer3{background-color:#fff;height:110px;width:100%;float:left;}
+     
+     #footer-text{width:754px;margin-left:auto;margin-right:auto;text-align:center;margin-top:30px;}
+     #footer-links{width:245px;margin-left:auto;margin-right:auto;text-align:center;margin-top:23px;}
+     #footer-links a{margin-right:10px;}
+     #footer .loga{width:780px;margin-left:auto;margin-right:auto;margin-top:50px;}
+     #footer .loga span{margin: 0 23px;}
+     #footer #logo-nuv{display:block;width:132px;height:63px;background:url('/images/layout/nuv.png') no-repeat;float:left;}
+     #footer #logo-msmt{display:block;width:131px;height:82px;background:url('/images/layout/msmt.png') no-repeat;float:left;}
+     #footer #logo-mpsv{display:block;width:135px;height:64px;background:url('/images/layout/mpsv.png') no-repeat;float:left;}
+     #footer #logo-ujop{display:block;width:165px;height:55px;background:url('/images/layout/ujop.png') no-repeat;float:left;}
+     #footer #logo-mvcr{display:block;width:166px;height:79px;background:url('/images/layout/mvcr.png') no-repeat;float:left;}
+
+#navbar-wrap{background:#02497f;height:30px;min-height:30px;}
+ #navbar{height: 30px;}
+ #navbar ul{padding: 0;margin: 0;list-style-type: none;}
+ #navbar ul li{float:left;margin:0 42px 0 5px;padding: 0 0 0 28px;line-height: 30px;}
+ #navbar ul li a{color:#ffffff;font-weight: bolder;font-size: 0.95em;}
+ #navbar ul li a:hover{color:#81A4BF;}
+ #navbar ul li.zkouska{background: url('/images/layout/zkouska-nav.png') no-repeat center left;}
+ #navbar ul li.moodle{background: url('/images/layout/moodle-nav.png') no-repeat center left;}
+ #navbar ul li.elearning{background: url('/images/layout/elearning-nav.png') no-repeat center left;}
+
+.NewsSummary{padding:24px 5px;border-top:1px solid #ebecee;}
+.NewsSummaryMorelink{height: 34px; margin: 28px 0 5px; text-align: center; width: 146px; background:url('/images/layout/button.png') no-repeat;}
+.NewsSummaryMorelink a{font-weight: bold; line-height: 34px;}
+.NewsSummaryLink {margin: 10px 0;}
+.NewsSummaryLink a{font-size:1.8em;color:#076eb9;line-height: 1.3em;}
+.NewsSummaryPostdate{color:#8b8b8b;}
+
+#lang-select{float:left;overflow:hidden;position: absolute;right: 180px;top: 35px; width: 66px;}
+#lang-select select{background:transparent; border: 0;border-radius: 0;height: 30px; -webkit-appearance: none;width:86px;color:#55b9f7;font-weight:bold;padding: 5px 0 5px 30px;}
+
+#lang-select select option{color:#55b9f7;border-width: 0;padding: 5px 0 5px 30px;}
+#lang-select .arrow{background:url('/images/layout/lang-arrow.png') center right no-repeat;position:absolute;right:0;top:12px;width:5px;height:5px;display:block;}     
+#lang-select.cs_CZ,.cs_CZ{background:url('/images/flags/cs.png') 3px 5px no-repeat;}
+#lang-select.en_US,.en_US{background:url('/images/flags/en.png') 3px 5px no-repeat;}
+#lang-select.uk_UA,.uk_UA{background:url('/images/flags/ua.png') 3px 5px no-repeat;}
+#lang-select.ru_RU,.ru_RU{background:url('/images/flags/ru.png') 3px 5px no-repeat;}
+#lang-select.vi_VN,.vi_VN{background:url('/images/flags/vn.png') 3px 5px no-repeat;}
+#lang-select.fr_FR,.fr_FR{background:url('/images/flags/fr.png') 3px 5px no-repeat;}
+#lang-select.mn_MN,.mn_MN{background:url('/images/flags/mn.png') 3px 5px no-repeat;}
+#lang-select.zh_CN,.zh_CN{background:url('/images/flags/cn.png') 3px 5px no-repeat;}
+#lang-select.ar_AR,.ar_AR{background:url('/images/flags/ar.png') 3px 5px no-repeat;}
+
+
+
+#homepage-wrap{background: url("/images/layout/poz-big.jpg") no-repeat scroll center top #082851;  height: 452px;}
+#homepage-nav{}
+
+#homepage-nav #info,#homepage-nav #zkouska-cj,#homepage-nav #realie{width:335px;min-height:100px;position:relative;float:left; text-align: center;margin-top:66px;}
+#homepage-nav #info .icon{background:url('/images/layout/informace.png') no-repeat;display:block;width:78px;height:76px;position:relative;top:5px;left:130px;}
+#homepage-nav #zkouska-cj .icon{background:url('/images/layout/zkouska-cj.png') no-repeat;display:block;width:94px;height:76px;position:relative;top:5px;left:120px;}
+#homepage-nav #realie .icon{background:url('/images/layout/realie.png') no-repeat;display:block;width:120px;height:76px;position:relative;top:5px;left:100px;}
+#homepage-nav h2{color:#ffffff;font-size:2.4em;font-weight:normal;line-height:1.2em;margin:21px 0;}
+#homepage-nav p{color:#ffffff;font-weight:bolder;}
+#homepage-nav .detail{background:url('/images/layout/web-rozcestnik.png') no-repeat;display:block;width:126px;height:50px;color:#ffffff; position: relative;top:15px;left: 102px;}
+#homepage-nav .detail:hover{background:url('/images/layout/web-rozcestnik-h.png') no-repeat;text-decoration:none;}
+#homepage-nav .detail span{line-height:50px;font-size:1.3em;font-weight:bolder;text-align:center;}
+
+#homepage-text{}
+
+#homepage-text h2{text-align:center;margin-top:50px;font-size:2em;font-weight:normal;}
+#homepage-text p{width:962px;text-align:center;}
+#homepage-text .button{margin-left:auto;margin-right:auto;}
+.button{background:url('/images/layout/button.png') no-repeat;display:block;width:146px;height:34px;color:#00a4f9;text-align:center;}
+.button:hover{color:#00a4f9;}
+.button span{line-height:34px;}
+*/
+
+/* specificke styly */
+#zkouska{font-family:Times; }
+#zkouska ul li:before{content:'';}
+#zkouska table#uctenka{ border-collapse: collapse;margin-left:25px;}
+#zkouska table#uctenka td{font-weight: normal;border:1px solid black;padding:5px;}
+
+#limitMinutes{font-size:1.4em;color:#0065B5;}
+#vysledkyTestu strong{color:red;}
+#zahajitTest,#zkouska input[type="submit"],a#onlinePrihlaska,a#zopakovatTest{ background-color: #EE2434; border-radius: 
+5px 5px 5px 5px; color: #FFFFFF; font-size: 1.3em; padding: 6px;border-width:0;}
+a#onlinePrihlaska{margin-top:15px;float:left;}
+
+#homepage-nav #info,#homepage-nav #zkouska-cj,#homepage-nav #realie{width:335px;min-height:100px;position:relative;float:left; text-align: center;margin-top:66px;}
+#homepage-nav #info .icon{background:url('/images/layout/informace.png') no-repeat;display:block;width:78px;height:76px;position:relative;top:5px;left:130px;}
+#homepage-nav #zkouska-cj .icon{background:url('/images/layout/zkouska-cj.png') no-repeat;display:block;width:94px;height:76px;position:relative;top:5px;left:120px;}
+#homepage-nav #realie .icon{background:url('/images/layout/realie.png') no-repeat;display:block;width:120px;height:76px;position:relative;top:5px;left:100px;}
+#homepage-nav h2{color:#ffffff;font-size:2.4em;font-weight:normal;line-height:1.2em;margin:21px 0;}
+#homepage-nav p{color:#ffffff;font-weight:bolder;}
+#homepage-nav{width:1024px;}
+#homepage-nav .detail{background:url('/images/layout/web-rozcestnik.png') no-repeat;display:block;width:126px;height:50px;color:#ffffff; position: relative;top:15px;left: 102px;}
+#homepage-nav .detail:hover{background:url('/images/layout/web-rozcestnik-h.png') no-repeat;text-decoration:none;}
+#homepage-nav .detail span{line-height:50px;font-size:1.3em;font-weight:bolder;text-align:center;}
+
+#homepage-text{}
+
+#homepage-text h2{text-align:center;margin-top:50px;font-size:2em;font-weight:normal;}
+#homepage-text p{width:962px;text-align:center;}
+#homepage-text .button{margin-left:auto;margin-right:auto;}
+#logo{display:block;background:url('/images/layout/logo-obcanstvi.png');width:214px;height:50px;margin-top:22px;float:left;position:absolute;}
+
+     
+#vypisUloh ol ol > li:before {content:'';}
+#vypisUloh div.q_pic { display: block;}
+#vypisUloh ol > li:before{font-weight:bold;}
+
+#lang-select.uk_UA,.uk_UA{background:url('/images/flags/ua.png') 3px 5px no-repeat;}
+
+#kontakty-wrap td{border-width:0;vertical-align:top;}
+#kontakty-wrap td img{margin-top:20px;}
+#kontakty-wrap table{background-color:#EEF5F7;}
+#user-panel {top:30px;bottom: auto;}
+
+.vn #zalozky a span{font-size:1.5em;}
+

@@ -1,0 +1,258 @@
+#ajax-spinner {
+	margin: 15px 0 0 15px;
+	padding: 13px;
+	background: white url('../images/spinner.gif') no-repeat 50% 50%;
+	font-size: 0;
+	z-index: 123456;
+	display: none;
+}
+
+div.flash {
+	color: black;
+	background: #FFF9D7;
+	border: 1px solid #E2C822;
+	padding: 1em;
+	margin: 1em 0;
+}
+
+form tr, form td {
+	vertical-align: top;
+	font-weight: normal;
+}
+
+form .required label {
+	font-weight: bold;
+}
+
+form .error {
+	color: #D00;
+	font-weight: bold;
+}
+ol {line-height: 25px;}
+
+
+/*novy layout*/
+
+body,html{padding:0;margin:0;}
+body{
+background: #fff;
+font-family:'PT Sans', sans-serif;
+text-rendering:'geometricPrecision';
+font-size:14px;
+line-height:140%;
+}
+
+h1,h2,h3,h4{color:#046cb5;}
+h1{font-size:2.45em;font-weight:normal;letter-spacing: 2px;line-height: 1em;}
+h2{font-size:1.5em;}
+h3{font-size:1.2em;}
+h4{font-size:1.2em;}
+a{color:#0e9ff2;text-decoration:none;}
+a:hover{color:#EB3436;text-decoration:underline;}
+
+table{border-radius: 5px;border-collapse: collapse;}
+td{border:1px solid #dee3e5;padding:10px 15px;}
+th{padding:10px 15px; background: #00a4f1;border:1px solid #00a4f1;border-bottom-width:0;color:#fff;}
+
+table.nostyle{border:0px solid transparent;background: transparent;border-radius: 0px;}
+.nostyle th,.nostyle td{border:0px solid transparent;background: transparent;}
+/*formulare*/
+caption{color:#046cb5;}
+input[type="text"],input[type="password"]{border:1px solid #dce1e3;border-radius:15px;color:#898989;padding:5px 15px;font-weight:bolder;}
+input[type="submit"]{border:1px solid #22b0f3;border-radius:15px;padding:5px 15px;color:#22b0f3;background: #fff;}
+textarea{border:1px solid #dce1e3;font-weight:bolder;}
+select{border:1px solid #22b0f3;border-radius:15px;padding:5px 15px;font-weight:bolder;}
+fieldset{border-radius:15px;}
+legend{}
+
+ul.ulist,#main ul{list-style-type:none;}
+ul.ulist li:before,#main ul li:before{ color: #046cb5;content: "\002022";margin-left: -15px;padding-right: 5px;}
+ul.ulist li,#main ul li{color:#000; display: list-item;}
+
+ol{list-style-type:none;counter-reset:item;}
+ol > li:before{ color: #046cb5;content:counter(item) ".";padding-right:5px;counter-increment:item;display: inline-block;margin-left: -15px;}
+ol li{color:#000;}
+ul ol li:before{content: "";}
+ol li div,ol li span, ul li div,ul li span{display: inline;}
+
+p{margin:12px 5px;color:#000;}
+
+   #head-wrap,#topmenu-wrap,#zalozky-wrap,#content-wrap,#footer-wrap,#homepage-wrap,#homepage-text-wrap,#homepage-welcome-wrap,#navbar-wrap{min-height:50px;width:100%;border:0px solid black;min-width:1012px;}
+     #head,#topmenu,#zalozky,#content,#homepage-nav,#homepage-text,#homepage-welcome,#navbar{width:1012px;margin-left:auto;margin-right:auto;}
+        #head-wrap{height:97px;position:relative;border-bottom: 1px solid #D8D8D8;}
+     #head{position:relative;}
+     #main-nav-corner{position:absolute;background:url('/images/layout/main-nav-corner.png') no-repeat;display:block;width:81px;height:81px;top:0;right:0;z-index: 100;}
+     #logo{display:block;width:214px;height:50px;margin-top:22px;float:left;position:absolute;}
+     #logo-pobyt{display:block;width:249px;height:50px;margin-top:22px;float:left;background:url('/images/layout/logo-trvaly-pobyt.png');margin-right:50px;}
+     #logo-obcanstvi{display:block;width:214px;height:50px;margin-top:22px;float:left;background:url('/images/layout/logo-obcanstvi.png');}
+     
+     #topmenu-wrap{background-color:#edf5f7;border-top:1px solid #e9edee;height:50px;}
+     #topmenu{position:relative;}
+     #hmenuwrap {position:absolute;top:5px;left:5px;}
+     #hmenuwrap a{float:left;margin:10px;color:#0e9ff2;font-size:1.2em;text-decoration:none;}
+     #hmenuwrap a:hover{text-decoration:underline;color:#ED3236;}
+     #topmenu #search{position:absolute;top:8px;;right:5px;color:#fff;background:url('/images/layout/search.png') no-repeat;width:210px;height:34px;}
+
+     #topmenu #search input[type="text"]{border-width:0;margin-top:8px;width:160px;background-color:transparent;}
+     #topmenu #search input[type="submit"]{position:absolute;top:8px;right:8px;background:url('/images/layout/search-icon.png') no-repeat;width:18px;height:18px;color:transparent;border-width:0;cursor:pointer;}
+     #topmenu #search label{display:none;}
+     #zalozky-wrap{height:93px;background:url('/images/layout/poz-small.jpg') repeat-x;}
+     #zalozky a{display:block;height:73px;position:relative;float:left;margin-top:20px;}
+     #zalozky a span{display:block;float:left;}
+     #zalozky a span.left{width:12px;height:73px;background:none;}
+     #zalozky a span.right{width:12px;height:73px;background:none;}
+     #zalozky a span.center{background-color:transparent;height:73px;line-height: 73px;font-size:1.6em;color:#ffffff;max-width:510px;}
+     #zalozky a.selected span.left{background:url('/images/layout/zalozka-tl.png') no-repeat;}
+     #zalozky a.selected span.right{background:url('/images/layout/zalozka-tr.png') no-repeat;}
+     #zalozky a.selected span.center{background-color:#fff;color:#ED3236;}
+     #zalozky a:hover span.center{color:#ED3236;}
+     
+     #zalozky a span.center .info{display:block;width:25px;height:25px;margin:25px 5px;background:url('/images/layout/informace-s.png') no-repeat;}
+     #zalozky a.selected span.center .info{background:url('/images/layout/informace-s-h.png') no-repeat;}
+     #zalozky a span.center .realie{display:block;width:45px;height:25px;margin:25px 5px;background:url('/images/layout/realie-s.png') no-repeat;}
+     #zalozky a.selected span.center .realie{background:url('/images/layout/realie-s-h.png') no-repeat;}
+     #zalozky a span.center .zkouskacj{display:block;width:31px;height:25px;margin:25px 5px;background:url('/images/layout/zkouska-cj-s.png') no-repeat;}
+     #zalozky a.selected span.center .zkouskacj{background:url('/images/layout/zkouska-cj-s-h.png') no-repeat;}
+     
+     #menu {width:230px;float:left;min-height: 20px;}
+     #menu ul{list-style-type:none;padding:0;margin-top:55px;}
+     #menu ul ul{margin:5px 0 0 0px;padding-left:10px;}
+     #menu ul li {}
+     #menu ul li ,#menu ul li a{color:#0e9ff2;text-decoration:none;font-weight: 500;}
+     #menu ul li{border-top:1px solid #e9edee;padding:5px 8px;}
+
+    #menu ul li a:hover{color:#f03337;}  
+#menu .currentpage{background-color:#f6fafb;color:#f03337;}
+/*#menu .sectionheader{background:url('/images/layout/menu-arrow-open.png') right 15px no-repeat;cursor:pointer;}*/
+#menu .sectionheader{background:url('/images/layout/arrow-right.png') scroll 95% 54% no-repeat;cursor:pointer;}
+
+#menu .sectionheader ul{display:none;}
+#menu .sectionheader.activeparent ul{display:block;}
+#menu .sectionheader span{display: block; width: 100%;}
+/*#menu .activeparent{background:url('/images/layout/menu-arrow-close.png') right 15px no-repeat;}*/
+#menu li.activeparent{background:url('/images/layout/arrow-down.png') scroll 95% 12px no-repeat;}
+#menu li.activeparent ul{display:block;}
+     #main{float:left;width:750px;margin-top:40px;margin-left:30px;}
+     
+     #breadcrumbs,#breadcrumbs a,#breadcrumbs span{color:#8e8e8e;text-decoration:none;font-size: 0.85em;font-variant:normal;}
+     #breadcrumbs .lastitem{color:#f03337;}
+     
+     #footer1,#footer2{border-top:1px solid #e9edee;background-color:#c7d7dd;width:100%;float:left;}
+     #footer1{margin-top:40px;height:150px;}
+     #footer2{background-color:#edf5f7;height:180px;}
+     #footer3{background-color:#fff;height:110px;width:100%;float:left;}
+     
+     #footer-text{width:754px;margin-left:auto;margin-right:auto;text-align:center;margin-top:30px;}
+     #footer-links{width:600px;margin-left:auto;margin-right:auto;text-align:center;margin-top:23px;}
+     #footer-links a{margin-right:10px;}
+     #footer .loga{width:780px;margin-left:auto;margin-right:auto;margin-top:50px;}
+     #footer .loga a{margin: 0 23px;}
+     #footer #logo-nuv{display:block;width:132px;height:63px;background:url('/images/layout/nuv.png') no-repeat;float:left;}
+     #footer #logo-msmt{display:block;width:131px;height:82px;background:url('/images/layout/msmt.png') no-repeat;float:left;}
+     #footer #logo-mpsv{display:block;width:135px;height:64px;background:url('/images/layout/mpsv.png') no-repeat;float:left;}
+     #footer #logo-ujop{display:block;width:165px;height:55px;background:url('/images/layout/ujop.png') no-repeat;float:left;}
+     #footer #logo-mvcr{display:block;width:166px;height:79px;background:url('/images/layout/mvcr.png') no-repeat;float:left;}
+
+/*aktuality*/
+.NewsSummary{padding:24px 5px;border-top:1px solid #ebecee;}
+.NewsSummaryMorelink{height: 34px; margin: 28px 0 5px; text-align: center; width: 146px; background:url('/images/layout/button.png') no-repeat;}
+.NewsSummaryMorelink a{font-weight: bold; line-height: 34px;}
+.NewsSummaryLink {margin: 10px 0;}
+.NewsSummaryLink a{font-size:1.8em;color:#076eb9;line-height: 1.1em;}
+.NewsSummaryPostdate{color:#8b8b8b;}
+
+#lang-select{float:left;overflow:hidden;position: absolute;right: 180px;top: 35px; width: 66px;}
+#lang-select select{background:transparent; border-width: 0;border-radius: 0;height: 30px; -webkit-appearance: none;width:86px;color:#55b9f7;font-weight:bold;padding: 5px 0 5px 30px;}
+
+#lang-select select option{color:#55b9f7;border-width: 0;padding: 5px 0 5px 30px;}
+#lang-select .arrow{background:url('/images/layout/lang-arrow.png') center right no-repeat;position:absolute;right:0;top:12px;width:5px;height:5px;display:block;}     
+#lang-select.cs_CZ,.cs_CZ{background:url('/images/flags/cs.png') 3px 5px no-repeat;}
+#lang-select.en_US,.en_US{background:url('/images/flags/en.png') 3px 5px no-repeat;}
+#lang-select.uk_UA,.uk_UA{background:url('/images/flags/ua.png') 3px 5px no-repeat;}
+#lang-select.ru_RU,.ru_RU{background:url('/images/flags/ru.png') 3px 5px no-repeat;}
+#lang-select.vi_VN,.vi_VN{background:url('/images/flags/vn.png') 3px 5px no-repeat;}
+#lang-select.fr_FR,.fr_FR{background:url('/images/flags/fr.png') 3px 5px no-repeat;}
+#lang-select.mn_MN,.mn_MN{background:url('/images/flags/mn.png') 3px 5px no-repeat;}
+#lang-select.zh_CN,.zh_CN{background:url('/images/flags/cn.png') 3px 5px no-repeat;}
+#lang-select.ar_AR,.ar_AR{background:url('/images/flags/ar.png') 3px 5px no-repeat;}
+
+
+
+#homepage-wrap{background:url('/images/layout/poz-big2.jpg') center center no-repeat #010e3b;height:452px;}
+#homepage-nav{width: 680px;}
+
+#homepage-nav #trvaly-pobyt,#homepage-nav #obcanstvi{width:340px;min-height:100px;position:relative;float:left; text-align: center;margin-top:50px;}
+#homepage-nav #trvaly-pobyt .icon{background:url('/images/layout/homepage-trvaly-pobyt.png') no-repeat;display:block;width:101px;height:101px;position:relative;top:5px;left:120px;}
+#homepage-nav #obcanstvi .icon{background:url('/images/layout/homepage-obcanstvi.png') no-repeat;display:block;width:101px;height:101px;position:relative;top:5px;left:120px;}
+#homepage-nav h2{color:#ffffff;font-size:2.4em;font-weight:normal;line-height:1.2em;margin:21px 0;}
+#homepage-nav p{color:#ffffff;font-weight:normal;}
+#homepage-nav .detail{background:url('/images/layout/web-rozcestnik.png') no-repeat;display:block;width:126px;height:50px;color:#ffffff; position: relative;top:15px;left: 106px;}
+#homepage-nav .detail:hover{background:url('/images/layout/web-rozcestnik-h.png') no-repeat;text-decoration:none;}
+#homepage-nav .detail span{line-height:50px;font-size:1.3em;font-weight:bolder;text-align:center;}
+
+#homepage-text{}
+
+#homepage-text h2{text-align:center;margin-top:50px;font-size:2em;font-weight:normal;}
+#homepage-text p{width:962px;text-align:center;}
+#homepage-text .button{margin-left:auto;margin-right:auto;}
+.button{background:url('/images/layout/button.png') no-repeat;display:block;width:146px;height:34px;color:#00a4f9;text-align:center;}
+a.button{line-height: 33px;}
+.button:hover{color:#00a4f9;}
+.button span{line-height:34px;}
+
+#user-login{position: absolute;right:5px;top:32px;}
+#user-panel{ background: #FFFFFF; border: 1px solid #E0E0E0; border-radius: 0 0 10px 10px; top: 30px; display: block; left: 0; padding: 5px; position: absolute; width: 125px;}
+
+#user-avatar{background:url('/images/layout/user.png') no-repeat;display:block;width:16px;height:16px;float:left;margin-right:5px;margin-top:8px;}
+#loggeduser{color:#00a4f9;text-align:center;float:left;text-transform: capitalize;margin-top:8px;}
+#userarrow{background:url('/images/layout/lang-arrow.png') no-repeat;display:block;width:5px;height:3px;float:left;margin: 16px 0 0 10px;}
+
+#login-form{float:left;margin-top:50px;}
+#login-form p{text-align:center;}
+#login-form form{margin-top:50px;}
+#login-username,#login-password{background:url('/images/layout/login-input.png') no-repeat;display:block;width:227px;height:47px;}
+#login-send input[type='submit']{background:url('/images/layout/login-prihlasit.png') no-repeat;display:block;width:117px;height:47px;color:#fff;font-weight: bolder;text-align: center;border-radius: 0;border-width: 0;}
+
+#login-username,#login-password,#login-send{float:left;position:relative;margin-right: 10px;}
+#login-username span,#login-password span{color:#000; left: 15px;position: absolute; top: 12px;}
+#login-username input,#login-password input{background: transparent;position: absolute;top:10px;left:7px;width: 180px;border-width: 0;}
+#login-password a{ left: 20px; position: absolute;top: 50px;}
+
+form .errors{color: #ff0000;}
+#rozcestnik{}
+#rozcestnik .module h4 a,#rozcestnik .module h4 span{float:left;margin-right:5px;font-size:1.5em;color:#026EB7;font-weight: normal;}
+#rozcestnik-obcanstvi{float:left;}
+#rozcestnik-obcanstvi .mainlink{background:url('/images/layout/logo-obcanstvi-big.png') no-repeat;width:100%;height:100px;float:left;margin: 35px 0;}
+
+#rozcestnik-obcanstvi .module{width:315px;float: left;margin-left: 20px;}
+#rozcestnik-obcanstvi .module h4 .realie{background:url('/images/layout/realie-s.png') no-repeat;width:45px;height:25px;display:block;}
+#rozcestnik-obcanstvi .module h4 .zkouskacj{background:url('/images/layout/zkouska-cj-s.png') no-repeat;width:31px;height:25px;display:block;}
+#rozcestnik-obcanstvi .module h4 .info{background:url('/images/layout/informace-s.png') no-repeat;width:25px;height:25px;display:block;}
+#rozcestnik-obcanstvi .module h4 {float:left;  width: 100%;border-bottom:1px dotted #d8d8d8;margin-bottom: 10px;}
+#rozcestnik-obcanstvi .module h4 a{height:30px;}
+#rozcestnik-obcanstvi .module ul{float:left;margin: 0;padding: 0 25px;list-style:square inside url('data:image/gif;base64,R0lGODlhBQAKAIABAAAAAP///yH5BAEAAAEALAAAAAAFAAoAAAIIjI+ZwKwPUQEAOw==');}
+
+#rozcestnik-trvaly-pobyt{float:left;}
+
+#rozcestnik-trvaly-pobyt .mainlink{background:url('/images/layout/logo-trvaly-big.png') no-repeat;width:100%;height:100px;float:left;margin: 35px 0;}
+#rozcestnik-obcanstvi .maindesc,#rozcestnik-trvaly-pobyt .maindesc{margin: 0 0 0px 0;float: left;min-height: 50px;width: 100%;}
+#rozcestnik-trvaly-pobyt .module{ margin-left: 20px; width: 233px;float: left;}
+#rozcestnik-trvaly-pobyt .module h4 .zkouska{background:url('/images/layout/zkouska.png') no-repeat;width:31px;height:26px;display:block;}
+#rozcestnik-trvaly-pobyt .module h4 .dotaznik{background:url('/images/layout/dotaznik.png') no-repeat;width:32px;height:27px;display:block;}
+#rozcestnik-trvaly-pobyt .module h4 .elearning{background:url('/images/layout/elearning.png') no-repeat;width:25px;height:27px;display:block;}
+#rozcestnik-trvaly-pobyt .module h4 .zkousejici{background:url('/images/layout/pro-zkousejici-s.png') no-repeat;width:25px;height:25px;display:block;}
+#rozcestnik-trvaly-pobyt .module h4{float:left;  width: 100%;border-bottom:1px dotted #d8d8d8;margin-bottom: 10px;}
+#rozcestnik-trvaly-pobyt .module h4 a{height:30px;margin-bottom: 10px;}
+#rozcestnik-trvaly-pobyt .module ul{float:left;margin: 0;padding: 0 25px;list-style:square inside url('data:image/gif;base64,R0lGODlhBQAKAIABAAAAAP///yH5BAEAAAEALAAAAAAFAAoAAAIIjI+ZwKwPUQEAOw==');}
+
+#navbar-wrap{background:#02497f;height:30px; min-height: 30px;}
+#navbar{height: 30px;}
+#navbar ul{padding: 0;margin: 0;list-style-type: none;}
+#navbar ul li{float:left;margin:0 42px 0 5px;padding: 0 0 0 28px;line-height: 30px;}
+#navbar ul li a{color:#ffffff;font-weight: bolder;font-size: 0.95em;}
+#navbar ul li a:hover{color:#81A4BF;}
+#navbar ul li.zkouska{background: url('/images/layout/zkouska-nav.png') no-repeat center left;}
+#navbar ul li.moodle{background: url('/images/layout/moodle-nav.png') no-repeat center left;}
+#navbar ul li.elearning{background: url('/images/layout/elearning-nav.png') no-repeat center left;}
+#navbar ul li.dotaznik{background: url('/images/layout/dotaznik-nav.png') no-repeat center left;}
+#navbar ul li.ulohy_z_cj{background: url('/images/layout/ulohy-z-cj-nav.png') no-repeat center left;}
